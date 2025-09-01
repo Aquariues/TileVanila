@@ -44,7 +44,13 @@ public class EnemyMovement : MonoBehaviour
     {
         moveSpeed = -moveSpeed;
         Vector3 localScale = transform.localScale;
-        localScale.x = -Mathf.Sign(enemyRigidbody.velocity.x) * Mathf.Abs(localScale.x);
+        if (localScale.x > 0)
+        {
+            localScale.x = -1f;
+        } else
+        {
+            localScale.x = 1f;
+        }
         transform.localScale = localScale;
     }
 

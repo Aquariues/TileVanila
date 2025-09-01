@@ -150,12 +150,20 @@ PrefabInstance:
       value: GameSession
       objectReference: {fileID: 0}
     - target: {fileID: 3790939476720426220, guid: 017bc0d7cb66f47468a4045ad2f592ab, type: 3}
+      propertyPath: maxMana
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3790939476720426220, guid: 017bc0d7cb66f47468a4045ad2f592ab, type: 3}
       propertyPath: currentMana
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3790939476720426220, guid: 017bc0d7cb66f47468a4045ad2f592ab, type: 3}
       propertyPath: playerLives
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3790939476720426220, guid: 017bc0d7cb66f47468a4045ad2f592ab, type: 3}
+      propertyPath: levelLoadDelay
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5921429756005707656, guid: 017bc0d7cb66f47468a4045ad2f592ab, type: 3}
       propertyPath: m_AnchorMax.x
@@ -229,6 +237,14 @@ PrefabInstance:
     - target: {fileID: 406513586250525245, guid: ad0f440b74cbe40a9816ceab377b3deb, type: 3}
       propertyPath: m_Name
       value: MapInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731205164507022909, guid: ad0f440b74cbe40a9816ceab377b3deb, type: 3}
+      propertyPath: spawnPoint.x
+      value: -4.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731205164507022909, guid: ad0f440b74cbe40a9816ceab377b3deb, type: 3}
+      propertyPath: spawnPoint.y
+      value: 11.75
       objectReference: {fileID: 0}
     - target: {fileID: 7672863573443726873, guid: ad0f440b74cbe40a9816ceab377b3deb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -43647,7 +43663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 673271817012025770, guid: 4c2c92e8020434fb1a97c5ce7620d05d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.450001
+      value: 11.05
       objectReference: {fileID: 0}
     - target: {fileID: 1858806241085667322, guid: 4c2c92e8020434fb1a97c5ce7620d05d, type: 3}
       propertyPath: m_AnimatedTarget
@@ -43739,7 +43755,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7994266279432270736, guid: 4c2c92e8020434fb1a97c5ce7620d05d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.1100426
+      value: -4.510043
       objectReference: {fileID: 0}
     - target: {fileID: 8390350864881660360, guid: 4c2c92e8020434fb1a97c5ce7620d05d, type: 3}
       propertyPath: m_LocalPosition.x

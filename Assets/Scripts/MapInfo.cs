@@ -27,4 +27,9 @@ public class MapInfo : MonoBehaviour
     {
         return spawnPoint;
     }
+
+    public void ResetSpawnPoint()
+    {
+        spawnPoint = Vector2.zero;
+    }
 }

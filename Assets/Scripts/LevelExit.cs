@@ -16,6 +16,7 @@ public class LevelExit : MonoBehaviour
         {
             PlayLevelExitSFX();
             StartCoroutine(LoadLevelWithDelay());
+            FindObjectOfType<GameSession>().GetCurrentCheckPoint();
         }
     }
 
@@ -29,12 +30,12 @@ public class LevelExit : MonoBehaviour
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         FindObjectOfType<ScenesPersist>().ResetScenesPersist();
-        FindObjectOfType<GameSession>().ResetCheckPoint();
         if (currentSceneIndex == SceneManager.sceneCountInBuildSettings - 1)
         {
             SceneManager.LoadScene(0);
         }
         SceneManager.LoadScene(currentSceneIndex + 1);
+        FindObjectOfType<GameSession>().ResetCheckPoint();
     }
     
     private void PlayLevelExitSFX()

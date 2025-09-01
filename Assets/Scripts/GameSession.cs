@@ -29,7 +29,7 @@ public class GameSession : MonoBehaviour
         {
             DontDestroyOnLoad(gameObject);
         }
-        ResetCheckPoint();
+        GetCurrentCheckPoint();
     }
     void Start()
     {
@@ -37,7 +37,7 @@ public class GameSession : MonoBehaviour
         scoreText.text = score.ToString();
         manaSlider.maxValue = maxMana;
         manaSlider.value = currentMana;
-        ResetCheckPoint();
+        GetCurrentCheckPoint();
     }
 
     private void OnEnable()
@@ -52,6 +52,7 @@ public class GameSession : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        GetCurrentCheckPoint();
         PlayerRespawn();
     }
 
@@ -147,9 +148,14 @@ public class GameSession : MonoBehaviour
         currentCheckpoint = newCheckpoint;
     }
 
-    public void ResetCheckPoint()
+    public void GetCurrentCheckPoint()
     {
         SetCheckPoint(FindObjectOfType<MapInfo>().GetSpawnPoint());
+    }
+
+    public void ResetCheckPoint()
+    {
+        currentCheckpoint = Vector2.zero;
     }
 
     public Vector2 GetCheckPoint()
