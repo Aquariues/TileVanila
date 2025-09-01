@@ -29,7 +29,7 @@ public class GameSession : MonoBehaviour
         {
             DontDestroyOnLoad(gameObject);
         }
-        SetCheckPoint(FindObjectOfType<MapInfo>().GetSpawnPoint());
+        ResetCheckPoint();
     }
     void Start()
     {
@@ -37,7 +37,7 @@ public class GameSession : MonoBehaviour
         scoreText.text = score.ToString();
         manaSlider.maxValue = maxMana;
         manaSlider.value = currentMana;
-        SetCheckPoint(FindObjectOfType<MapInfo>().GetSpawnPoint());
+        ResetCheckPoint();
     }
 
     private void OnEnable()
@@ -145,6 +145,11 @@ public class GameSession : MonoBehaviour
     public void SetCheckPoint(Vector2 newCheckpoint)
     {
         currentCheckpoint = newCheckpoint;
+    }
+
+    public void ResetCheckPoint()
+    {
+        SetCheckPoint(FindObjectOfType<MapInfo>().GetSpawnPoint());
     }
 
     public Vector2 GetCheckPoint()

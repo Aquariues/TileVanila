@@ -122,14 +122,14 @@ public class PlayerMovement : MonoBehaviour
 
     void GameOver()
     {
-        // if (IsDyingTouch())
-        // {
-        //     isAlive = false;
-        //     playerAnimator.SetTrigger("Dying");
-        //     playerRigidbody.velocity = deathKick;
-        //     gameSession.ProcessPlayerDeath();
-        //     PlayDieSFX();
-        // }
+        if (IsDyingTouch())
+        {
+            isAlive = false;
+            playerAnimator.SetTrigger("Dying");
+            playerRigidbody.velocity = deathKick;
+            gameSession.ProcessPlayerDeath();
+            PlayDieSFX();
+        }
     }
     bool IsDyingTouch()
     {
@@ -158,10 +158,4 @@ public class PlayerMovement : MonoBehaviour
     {
         AudioSource.PlayClipAtPoint(jumpSFX, Camera.main.transform.position, jumpSFXVolume);
     }
-
-    // public void Respawn(Vector2 position)
-    // {       
-    //     transform.position = position;
-    // }
-
 }

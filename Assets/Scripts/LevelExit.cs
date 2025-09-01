@@ -29,7 +29,7 @@ public class LevelExit : MonoBehaviour
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         FindObjectOfType<ScenesPersist>().ResetScenesPersist();
-        FindObjectOfType<GameSession>().SetCheckPoint(Vector2.zero);
+        FindObjectOfType<GameSession>().ResetCheckPoint();
         if (currentSceneIndex == SceneManager.sceneCountInBuildSettings - 1)
         {
             SceneManager.LoadScene(0);
