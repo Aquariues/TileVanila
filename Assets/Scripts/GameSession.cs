@@ -149,8 +149,11 @@ public class GameSession : MonoBehaviour
     }
 
     public void GetCurrentCheckPoint()
-    {
-        SetCheckPoint(FindObjectOfType<MapInfo>().GetSpawnPoint());
+    {   
+        if (currentCheckpoint == Vector2.zero)
+        {
+            SetCheckPoint(FindObjectOfType<MapInfo>().GetSpawnPoint());
+        }
     }
 
     public void ResetCheckPoint()

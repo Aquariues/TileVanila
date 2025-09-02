@@ -84,8 +84,31 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.9433962
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2068584553883685798, guid: 3f552c7dca09445d2b2d5c7da24c66aa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4339934302790505253, guid: 3f552c7dca09445d2b2d5c7da24c66aa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7667281898957101094}
   m_SourcePrefab: {fileID: 100100000, guid: 3f552c7dca09445d2b2d5c7da24c66aa, type: 3}
+--- !u!1 &6024356613712102831 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4339934302790505253, guid: 3f552c7dca09445d2b2d5c7da24c66aa, type: 3}
+  m_PrefabInstance: {fileID: 8043529174101104266}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-7667281898957101094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6024356613712102831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d4cedf017bc1478a8c3cc87b2373927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifePickupSFX: {fileID: 8300000, guid: 62fedcc8289874e85b52a619c19a41b3, type: 3}
+  lifePickupVolume: 0.15
