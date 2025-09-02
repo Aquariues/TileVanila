@@ -91187,11 +91187,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 673271817012025770, guid: 4c2c92e8020434fb1a97c5ce7620d05d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.668269
+      value: 5.6314573
       objectReference: {fileID: 0}
     - target: {fileID: 673271817012025770, guid: 4c2c92e8020434fb1a97c5ce7620d05d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.541021
+      value: 13.539614
       objectReference: {fileID: 0}
     - target: {fileID: 1858806241085667322, guid: 4c2c92e8020434fb1a97c5ce7620d05d, type: 3}
       propertyPath: m_AnimatedTarget

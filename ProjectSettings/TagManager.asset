@@ -12,6 +12,7 @@ TagManager:
   - AddManaObject
   - AddLife
   - CheckPoint
+  - DynamicObject
   layers:
   - Default
   - TransparentFX
@@ -28,7 +29,7 @@ TagManager:
   - Hazard
   - Weapon
   - Others
-  - 
+  - DynamicObject
   - 
   - 
   - 
@@ -69,6 +70,9 @@ TagManager:
     locked: 0
   - name: Others
     uniqueID: 1244600651
+    locked: 0
+  - name: DynamicObject
+    uniqueID: 3177723185
     locked: 0
   - name: Enemy
     uniqueID: 3927034621

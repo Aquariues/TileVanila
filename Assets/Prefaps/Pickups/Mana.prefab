@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mana
       objectReference: {fileID: 0}
+    - target: {fileID: 3503923763632234867, guid: 056a920f41d25421db152eada16f4283, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 9065683440822023571, guid: 056a920f41d25421db152eada16f4283, type: 3}
       propertyPath: m_Sprite
       value: 

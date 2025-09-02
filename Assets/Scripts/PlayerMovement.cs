@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
     void OnJump(InputValue value)
     {
         if (!isAlive) { return; }
-        if (!playerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        if (!IsAllowedToJump())
         {
             return;
         }
@@ -83,6 +83,19 @@ public class PlayerMovement : MonoBehaviour
             playerRigidbody.velocity += new Vector2(0f, jumpSpeed);
             PlayJumpSFX();
         }
+    }
+
+    bool IsAllowedToJump()
+    {
+        if (playerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        {
+            return true;
+        }
+        if (playerFeetCollider.IsTouchingLayers(LayerMask.GetMask("DynamicObject")))
+        {
+            return true;
+        }
+        return false;
     }
 
     void Run()
