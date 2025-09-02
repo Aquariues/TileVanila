@@ -155,11 +155,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3790939476720426220, guid: 017bc0d7cb66f47468a4045ad2f592ab, type: 3}
       propertyPath: currentMana
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3790939476720426220, guid: 017bc0d7cb66f47468a4045ad2f592ab, type: 3}
       propertyPath: playerLives
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3790939476720426220, guid: 017bc0d7cb66f47468a4045ad2f592ab, type: 3}
       propertyPath: levelLoadDelay
@@ -219,7 +219,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8932143418591149219, guid: 017bc0d7cb66f47468a4045ad2f592ab, type: 3}
       propertyPath: m_Volume
-      value: 0.01
+      value: 0.03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -43716,11 +43716,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 673271817012025770, guid: 4c2c92e8020434fb1a97c5ce7620d05d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.45
+      value: 5.6277976
       objectReference: {fileID: 0}
     - target: {fileID: 673271817012025770, guid: 4c2c92e8020434fb1a97c5ce7620d05d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.05
+      value: 11.035272
       objectReference: {fileID: 0}
     - target: {fileID: 1858806241085667322, guid: 4c2c92e8020434fb1a97c5ce7620d05d, type: 3}
       propertyPath: m_AnimatedTarget
